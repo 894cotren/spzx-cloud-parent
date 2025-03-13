@@ -9,10 +9,18 @@ spring:
     url: jdbc:mysql://192.168.83.123:3306/spzx-cloud-user?characterEncoding=UTF8
     username: root
     password: 23321212
+  # 配置nacos注册中心的地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.83.123:8848
+  application:
+    name: spzx-cloud-user   # 每一个服务注册到nacos注册中心都需要提供一个服务名称,order微服务注册的时候需要更改微服务名称
 
 # 配置mybatis的相关信息
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
   type-aliases-package: com.atguigu.spzx.cloud.user.entity
   mapper-locations: classpath:/mapper/*.xml

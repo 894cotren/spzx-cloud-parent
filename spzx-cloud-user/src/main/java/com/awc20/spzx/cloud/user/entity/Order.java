@@ -1,4 +1,4 @@
-package com.awc20.spzx.cloud.order.entity;
+package com.awc20.spzx.cloud.user.entity;
 
 import lombok.Data;
 
@@ -12,5 +12,4 @@ public class Order {
     private String name ;
     private BigDecimal price ;
     private Integer num ;
-    private User user;
 }
