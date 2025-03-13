@@ -12,6 +12,7 @@
     <modules>
         <module>spzx-cloud-user</module>
         <module>spzx-cloud-order</module>
+        <module>spzx-cloud-gateway</module>
     </modules>
 
     <!-- 定义属性 -->
